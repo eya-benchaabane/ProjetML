@@ -1,0 +1,121 @@
+{
+  "timestamp": "2026-05-20T00:28:19.605713",
+  "drift_share": 1.0,
+  "drifted_features_count": 16,
+  "drifted_features": [
+    "gender",
+    "SeniorCitizen",
+    "Partner",
+    "Dependents",
+    "tenure",
+    "PhoneService",
+    "MultipleLines",
+    "OnlineSecurity",
+    "OnlineBackup",
+    "DeviceProtection",
+    "TechSupport",
+    "StreamingTV",
+    "StreamingMovies",
+    "PaperlessBilling",
+    "MonthlyCharges",
+    "TotalCharges"
+  ],
+  "ks_test_details": {
+    "gender": {
+      "stat": 0.527363184079602,
+      "p_value": 1.3587582990017197e-288,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "SeniorCitizen": {
+      "stat": 0.8392888888888889,
+      "p_value": 5.04e-322,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "Partner": {
+      "stat": 0.5182222222222223,
+      "p_value": 3.686742628120503e-278,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "Dependents": {
+      "stat": 0.7038222222222222,
+      "p_value": 1.68e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "tenure": {
+      "stat": 0.49781606254442073,
+      "p_value": 1.802536590185303e-255,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "PhoneService": {
+      "stat": 0.8855721393034826,
+      "p_value": 1e-322,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "MultipleLines": {
+      "stat": 0.5749333333333333,
+      "p_value": 3.94e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "OnlineSecurity": {
+      "stat": 0.712,
+      "p_value": 1.606e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "OnlineBackup": {
+      "stat": 0.6556444444444445,
+      "p_value": 2.09e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "DeviceProtection": {
+      "stat": 0.6545777777777778,
+      "p_value": 2.095e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "TechSupport": {
+      "stat": 0.7114666666666667,
+      "p_value": 1.61e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "StreamingTV": {
+      "stat": 0.6147555555555556,
+      "p_value": 2.98e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "StreamingMovies": {
+      "stat": 0.6120888888888889,
+      "p_value": 3.04e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "PaperlessBilling": {
+      "stat": 0.6133617626154939,
+      "p_value": 3.01e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "MonthlyCharges": {
+      "stat": 0.5138240227434258,
+      "p_value": 3.95409558524955e-273,
+      "drifted": true,
+      "significance_level": 0.05
+    },
+    "TotalCharges": {
+      "stat": 0.6423239990523573,
+      "p_value": 2.297e-321,
+      "drifted": true,
+      "significance_level": 0.05
+    }
+  }
+}

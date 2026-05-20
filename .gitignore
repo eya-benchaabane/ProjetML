@@ -1,0 +1,35 @@
+# Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# MLflow & modèles locaux
+mlruns/
+**/mlflow.db
+**/mlflow.db.bak
+**/.mlflow/
+
+# Données brutes / traitées (générer via preprocessing.py)
+backendML/data/
+*.csv
+!ci/fixtures/*.csv
+
+# Node.js (frontend)
+node_modules/
+frontendML/frontendml/dist/
+
+# Rapports CI générés
+ci/reports/last_run.json
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Cache
+__pycache__/
+*.egg-info/

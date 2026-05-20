@@ -1,0 +1,82 @@
+{
+  "gender": {
+    "stat": 0.5081734186211798,
+    "p_value": 9.038042903660029e-267,
+    "drifted": true
+  },
+  "SeniorCitizen": {
+    "stat": 0.8247183131959251,
+    "p_value": 6.3e-322,
+    "drifted": true
+  },
+  "Partner": {
+    "stat": 0.49831945036721154,
+    "p_value": 4.769803596368569e-256,
+    "drifted": true
+  },
+  "Dependents": {
+    "stat": 0.6819654110400379,
+    "p_value": 1.863e-321,
+    "drifted": true
+  },
+  "tenure": {
+    "stat": 0.4951330964226487,
+    "p_value": 1.3529513772196294e-252,
+    "drifted": true
+  },
+  "PhoneService": {
+    "stat": 0.8791755508173419,
+    "p_value": 1.53e-322,
+    "drifted": true
+  },
+  "MultipleLines": {
+    "stat": 0.5681819474058281,
+    "p_value": 4.096e-321,
+    "drifted": true
+  },
+  "OnlineSecurity": {
+    "stat": 0.7016949538024165,
+    "p_value": 1.695e-321,
+    "drifted": true
+  },
+  "OnlineBackup": {
+    "stat": 0.6375175550817341,
+    "p_value": 2.416e-321,
+    "drifted": true
+  },
+  "DeviceProtection": {
+    "stat": 0.6366316986496091,
+    "p_value": 2.436e-321,
+    "drifted": true
+  },
+  "TechSupport": {
+    "stat": 0.684633214877991,
+    "p_value": 1.843e-321,
+    "drifted": true
+  },
+  "StreamingTV": {
+    "stat": 0.593964652925847,
+    "p_value": 3.483e-321,
+    "drifted": true
+  },
+  "StreamingMovies": {
+    "stat": 0.6005382610755745,
+    "p_value": 3.32e-321,
+    "drifted": true
+  },
+  "PaperlessBilling": {
+    "stat": 0.5714285714285714,
+    "p_value": 4.02e-321,
+    "drifted": true
+  },
+  "MonthlyCharges": {
+    "stat": 0.5209374081971097,
+    "p_value": 3.326214210375744e-281,
+    "drifted": true
+  },
+  "TotalCharges": {
+    "stat": 0.632015162283819,
+    "p_value": 2.55e-321,
+    "drifted": true
+  }
+}

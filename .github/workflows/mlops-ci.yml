@@ -1,0 +1,57 @@
+name: MLOps CI
+
+on:
+  push:
+    branches: [main, master, develop]
+  pull_request:
+    branches: [main, master, develop]
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backendML
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: backendML/requirements_drift.txt
+
+      - name: Install dependencies
+        run: pip install -r requirements_drift.txt
+
+      - name: Prepare dataset from CI fixture
+        working-directory: ${{ github.workspace }}
+        run: |
+          mkdir -p backendML/data/processed
+          cp ci/fixtures/churn_cleaned_sample.csv backendML/data/processed/churn_cleaned.csv
+
+      - name: CI rapide (lint + smoke)
+        working-directory: ${{ github.workspace }}
+        run: python ci/local_pipeline.py --quick --skip-setup
+
+      - name: CI complet (drift + MLflow + artefacts)
+        working-directory: ${{ github.workspace }}
+        run: python ci/local_pipeline.py --skip-setup
+
+      - name: Upload CI report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ci-report
+          path: ci/reports/last_run.json
+
+      - name: Upload drift reports
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: drift-reports
+          path: |
+            backendML/reports/evidently_drift_report.html
+            backendML/reports/ks_test_details.json
